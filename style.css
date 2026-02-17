@@ -42,13 +42,57 @@ header{
     background-color: azure;
     justify-self: center;
     border:5px black solid;
-    border-radius: 35%;
+    border-radius: 10%;
 
-}.btns{
+}
+#taskInput{
+    width: 50vw;
+    height: 10vh;
+    font-size: 40px;
+}
+#addButton{
+    width:7vw;
+    font-size: 20px;
+}
+.taskContainer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+.btns{
     width:50px;
     height:30px;
     margin:5px;
+    cursor: pointer;
+}
+#addButton{
+    cursor: pointer;
+    background-color: aliceblue;
+    size:50px;
+    outline:none;
+    border: none;
+}
+#addButton:hover{
+    background-color: rgb(218, 255, 251);
+}
+
+#complete:hover{
+    background-color: rgb(175, 242, 74);
+}
+#delete:hover{
+    background-color: rgb(237, 97, 97);
 }
 .tasks{
     font-size: 60px;
+}
+input{
+    size:40px;
+    border:none;
+    outline: none;
+    /* border-radius: 20px; */
+    background-color: antiquewhite;
+}
+#edit:hover{
+    background-color: rgb(116, 234, 245);
 }
